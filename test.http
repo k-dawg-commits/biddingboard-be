@@ -1,0 +1,38 @@
+### Submit updated bid data
+POST http://localhost:3333/add-new-entry
+Content-Type: application/json
+
+{
+  "Customer": "ACME LOGISTICS",
+  "Equipment": "Reefer",
+  "Date": "2025-05-10",
+  "Pick": "CHICAGO, IL",
+  "Del": "MIAMI, FL",
+  " DAT low ": 1000,
+  " DAT Mid ": 1200,
+  " DAT high ": 1500,
+  " Bid Rate ": 1300,
+  "Won/Lost": "Lost",
+  " Covered rate ": 1400,
+  " Profit ": 100
+}
+
+###df
+
+POST http://localhost:3222/get-history
+Content-Type: application/json
+
+{
+  "Pick": "TYLER, TX",
+  "Del": "LAS VEGAS, NV"
+}
+
+###j
+
+GET http://localhost:3222/graph-data
+Content-Type: application/json
+
+###j
+
+GET http://localhost:3222/mailed-bid-requests
+Content-Type: application/json
